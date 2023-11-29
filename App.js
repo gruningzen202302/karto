@@ -2,9 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+  const copyleftSymbol = String.fromCodePoint(0x1F12F);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>{"This is KARTO App " + copyleftSymbol }</Text>
       <StatusBar style="auto" />
     </View>
   );
