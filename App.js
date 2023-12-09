@@ -77,6 +77,7 @@ class FiniteStateMachine {
     console.log("input", input)
     this.transition.delta(input)
     let result
+    console.log("this.states.currentState", this.states.currentState)
     this.states.currentState === this.states.finalState
       ? (result = true)
       : (result = false)
